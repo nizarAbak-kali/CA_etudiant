@@ -1,0 +1,464 @@
+.file	1 "test_asm.c"
+.section	.mdebug.abi32
+.previous	
+.gnu_attribute	4,1
+.global	tab
+.data	
+.align	2
+.type	tab,@object
+.size	tab,28
+tab:
+.word	23
+.word	45
+.word	4294967290
+.word	120
+.word	2
+.word	11
+.word	23
+.text	
+.align	2
+.global	max2
+.set	nomips16
+.ent	max2
+max2:
+.frame	$30,16,$31
+.mask	1073741824,-4
+.fmask	0,0
+.set	noreorder
+.set	nomacro
+addiu $29,$29,65520
+sw $30,12($29)
+or $30,$29,$0
+sw $4,16($30)
+sw $5,20($30)
+lw $2,16($30)
+lw $3,20($30)
+slt $2,$2,$3
+beq $2,$0,$l2
+add $0,$0,$0
+lw $2,20($30)
+sw $2,0($30)
+j $l3
+add $0,$0,$0
+$l2:
+lw $2,16($30)
+sw $2,0($30)
+$l3:
+lw $2,0($30)
+or $29,$30,$0
+lw $30,12($29)
+addiu $29,$29,16
+jr $31
+add $0,$0,$0
+.set	macro
+.set	reorder
+.end	max2
+.size	max2,.-max2
+.align	2
+.global	max
+.set	nomips16
+.ent	max
+max:
+.frame	$30,16,$31
+.mask	1073741824,-4
+.fmask	0,0
+.set	noreorder
+.set	nomacro
+addiu $29,$29,65520
+sw $30,12($29)
+or $30,$29,$0
+sw $4,16($30)
+sw $5,20($30)
+sw $6,24($30)
+lw $2,16($30)
+lw $3,20($30)
+slt $2,$2,$3
+beq $2,$0,$l6
+add $0,$0,$0
+lw $2,20($30)
+lw $3,24($30)
+slt $2,$2,$3
+beq $2,$0,$l7
+add $0,$0,$0
+lw $2,24($30)
+sw $2,0($30)
+j $l8
+add $0,$0,$0
+$l7:
+lw $2,20($30)
+sw $2,0($30)
+j $l8
+add $0,$0,$0
+$l6:
+lw $2,16($30)
+lw $3,24($30)
+slt $2,$2,$3
+beq $2,$0,$l9
+add $0,$0,$0
+lw $2,24($30)
+sw $2,0($30)
+j $l8
+add $0,$0,$0
+$l9:
+lw $2,16($30)
+sw $2,0($30)
+$l8:
+lw $2,0($30)
+or $29,$30,$0
+lw $30,12($29)
+addiu $29,$29,16
+jr $31
+add $0,$0,$0
+.set	macro
+.set	reorder
+.end	max
+.size	max,.-max
+.align	2
+.global	max_tab
+.set	nomips16
+.ent	max_tab
+max_tab:
+.frame	$30,16,$31
+.mask	1073741824,-4
+.fmask	0,0
+.set	noreorder
+.set	nomacro
+addiu $29,$29,65520
+sw $30,12($29)
+or $30,$29,$0
+sw $4,16($30)
+sw $5,20($30)
+.set	noat
+lui $1,65535
+ori $2,$1,65535
+.set	at
+sw $2,0($30)
+sw $0,4($30)
+j $l12
+add $0,$0,$0
+$l14:
+lw $2,4($30)
+sll $3,$2,2
+lw $2,16($30)
+addu $2,$2,$3
+lw $3,0($2)
+lw $2,0($30)
+slt $2,$2,$3
+beq $2,$0,$l13
+add $0,$0,$0
+lw $2,4($30)
+sll $3,$2,2
+lw $2,16($30)
+addu $2,$2,$3
+lw $2,0($2)
+sw $2,0($30)
+$l13:
+lw $2,4($30)
+addiu $2,$2,1
+sw $2,4($30)
+$l12:
+lw $2,4($30)
+lw $3,20($30)
+slt $2,$2,$3
+bne $2,$0,$l14
+add $0,$0,$0
+lw $2,0($30)
+or $29,$30,$0
+lw $30,12($29)
+addiu $29,$29,16
+jr $31
+add $0,$0,$0
+.set	macro
+.set	reorder
+.end	max_tab
+.size	max_tab,.-max_tab
+.rdata	
+.align	2
+$lc0:
+.ascii	"%d\012\000"
+.text	
+.align	2
+.global	main
+.set	nomips16
+.ent	main
+main:
+.frame	$30,24,$31
+.mask	3221225472,-4
+.fmask	0,0
+.set	noreorder
+.set	nomacro
+addiu $29,$29,65512
+sw $31,20($29)
+sw $30,16($29)
+or $30,$29,$0
+sw $4,24($30)
+sw $5,28($30)
+.set	noat
+lui $1,0
+ori $4,$1,3
+.set	at
+.set	noat
+lui $1,0
+ori $5,$1,16
+.set	at
+.set	noat
+lui $1,0
+ori $6,$1,8
+.set	at
+jal max
+add $0,$0,$0
+or $3,$2,$0
+lui $2,%hi($lc0)
+addiu $4,$2,%lo($lc0)
+or $5,$3,$0
+jal printf
+add $0,$0,$0
+lui $2,%hi(tab)
+addiu $4,$2,%lo(tab)
+.set	noat
+lui $1,0
+ori $5,$1,7
+.set	at
+jal max_tab
+add $0,$0,$0
+or $3,$2,$0
+lui $2,%hi($lc0)
+addiu $4,$2,%lo($lc0)
+or $5,$3,$0
+jal printf
+add $0,$0,$0
+or $2,$0,$0
+or $29,$30,$0
+lw $31,20($29)
+lw $30,16($29)
+addiu $29,$29,24
+jr $31
+add $0,$0,$0
+.set	macro
+.set	reorder
+.end	main
+.size	main,.-main
+.ident	 "gcc: (gnu) 4.3.2"
+
+dans le fichier src/examples/ex_asm.s nb function : 4
+ ----------------- FONCTION 0 --------------------
+Begin Function
+.ent	max2
+max2:
+.frame	$30,16,$31
+.mask	1073741824,-4
+.fmask	0,0
+.set	noreorder
+.set	nomacro
+addiu $29,$29,65520
+sw $30,12($29)
+or $30,$29,$0
+sw $4,16($30)
+sw $5,20($30)
+lw $2,16($30)
+lw $3,20($30)
+slt $2,$2,$3
+beq $2,$0,$l2
+add $0,$0,$0
+lw $2,20($30)
+sw $2,0($30)
+j $l3
+add $0,$0,$0
+$l2:
+lw $2,16($30)
+sw $2,0($30)
+$l3:
+lw $2,0($30)
+or $29,$30,$0
+lw $30,12($29)
+addiu $29,$29,16
+jr $31
+add $0,$0,$0
+.set	macro
+.set	reorder
+.end	max2
+End Function
+
+
+ ----------------- FONCTION 1 --------------------
+Begin Function
+.ent	max
+max:
+.frame	$30,16,$31
+.mask	1073741824,-4
+.fmask	0,0
+.set	noreorder
+.set	nomacro
+addiu $29,$29,65520
+sw $30,12($29)
+or $30,$29,$0
+sw $4,16($30)
+sw $5,20($30)
+sw $6,24($30)
+lw $2,16($30)
+lw $3,20($30)
+slt $2,$2,$3
+beq $2,$0,$l6
+add $0,$0,$0
+lw $2,20($30)
+lw $3,24($30)
+slt $2,$2,$3
+beq $2,$0,$l7
+add $0,$0,$0
+lw $2,24($30)
+sw $2,0($30)
+j $l8
+add $0,$0,$0
+$l7:
+lw $2,20($30)
+sw $2,0($30)
+j $l8
+add $0,$0,$0
+$l6:
+lw $2,16($30)
+lw $3,24($30)
+slt $2,$2,$3
+beq $2,$0,$l9
+add $0,$0,$0
+lw $2,24($30)
+sw $2,0($30)
+j $l8
+add $0,$0,$0
+$l9:
+lw $2,16($30)
+sw $2,0($30)
+$l8:
+lw $2,0($30)
+or $29,$30,$0
+lw $30,12($29)
+addiu $29,$29,16
+jr $31
+add $0,$0,$0
+.set	macro
+.set	reorder
+.end	max
+End Function
+
+
+ ----------------- FONCTION 2 --------------------
+Begin Function
+.ent	max_tab
+max_tab:
+.frame	$30,16,$31
+.mask	1073741824,-4
+.fmask	0,0
+.set	noreorder
+.set	nomacro
+addiu $29,$29,65520
+sw $30,12($29)
+or $30,$29,$0
+sw $4,16($30)
+sw $5,20($30)
+.set	noat
+lui $1,65535
+ori $2,$1,65535
+.set	at
+sw $2,0($30)
+sw $0,4($30)
+j $l12
+add $0,$0,$0
+$l14:
+lw $2,4($30)
+sll $3,$2,2
+lw $2,16($30)
+addu $2,$2,$3
+lw $3,0($2)
+lw $2,0($30)
+slt $2,$2,$3
+beq $2,$0,$l13
+add $0,$0,$0
+lw $2,4($30)
+sll $3,$2,2
+lw $2,16($30)
+addu $2,$2,$3
+lw $2,0($2)
+sw $2,0($30)
+$l13:
+lw $2,4($30)
+addiu $2,$2,1
+sw $2,4($30)
+$l12:
+lw $2,4($30)
+lw $3,20($30)
+slt $2,$2,$3
+bne $2,$0,$l14
+add $0,$0,$0
+lw $2,0($30)
+or $29,$30,$0
+lw $30,12($29)
+addiu $29,$29,16
+jr $31
+add $0,$0,$0
+.set	macro
+.set	reorder
+.end	max_tab
+End Function
+
+
+ ----------------- FONCTION 3 --------------------
+Begin Function
+.ent	main
+main:
+.frame	$30,24,$31
+.mask	3221225472,-4
+.fmask	0,0
+.set	noreorder
+.set	nomacro
+addiu $29,$29,65512
+sw $31,20($29)
+sw $30,16($29)
+or $30,$29,$0
+sw $4,24($30)
+sw $5,28($30)
+.set	noat
+lui $1,0
+ori $4,$1,3
+.set	at
+.set	noat
+lui $1,0
+ori $5,$1,16
+.set	at
+.set	noat
+lui $1,0
+ori $6,$1,8
+.set	at
+jal max
+add $0,$0,$0
+or $3,$2,$0
+lui $2,%hi($lc0)
+addiu $4,$2,%lo($lc0)
+or $5,$3,$0
+jal printf
+add $0,$0,$0
+lui $2,%hi(tab)
+addiu $4,$2,%lo(tab)
+.set	noat
+lui $1,0
+ori $5,$1,7
+.set	at
+jal max_tab
+add $0,$0,$0
+or $3,$2,$0
+lui $2,%hi($lc0)
+addiu $4,$2,%lo($lc0)
+or $5,$3,$0
+jal printf
+add $0,$0,$0
+or $2,$0,$0
+or $29,$30,$0
+lw $31,20($29)
+lw $30,16($29)
+addiu $29,$29,24
+jr $31
+add $0,$0,$0
+.set	macro
+.set	reorder
+.end	main
+End Function
+
+

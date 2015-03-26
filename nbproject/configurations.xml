@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="src">
+        <df name="base">
+          <in>Basic_block.cpp</in>
+          <in>Cfg.cpp</in>
+          <in>Dfg.cpp</in>
+          <in>Directive.cpp</in>
+          <in>Function.cpp</in>
+          <in>Instruction.cpp</in>
+          <in>Label.cpp</in>
+          <in>Node_dfg.cpp</in>
+          <in>OPExpression.cpp</in>
+          <in>OPImmediate.cpp</in>
+          <in>OPLabel.cpp</in>
+          <in>OPRegister.cpp</in>
+          <in>Program.cpp</in>
+        </df>
+        <df name="mains">
+          <in>main.cpp</in>
+          <in>test_bb_cfg.cpp</in>
+          <in>test_dep.cpp</in>
+          <in>test_karine.cpp</in>
+        </df>
+        <df name="parsing">
+          <df name="asm">
+            <in>asm_GetInputSection.c</in>
+            <in>asm_GetObject.c</in>
+            <in>asm_GetObjectSymbolList.c</in>
+            <in>asm_SetMemory.c</in>
+            <in>asm_SetWordMemory.c</in>
+            <in>asm_addasiss.c</in>
+            <in>asm_addasobj.c</in>
+            <in>asm_addmemtab.c</in>
+            <in>asm_error.c</in>
+            <in>asm_fndmemtab.c</in>
+            <in>asm_globals.c</in>
+          </df>
+          <df name="utl">
+            <in>utl_AddDicItem.c</in>
+            <in>utl_Banner.c</in>
+            <in>utl_BinToInt.c</in>
+            <in>utl_CatNameIndex.c</in>
+            <in>utl_CharToAscii.c</in>
+            <in>utl_CharToInt.c</in>
+            <in>utl_ClearError.c</in>
+            <in>utl_CreateDictionary.c</in>
+            <in>utl_CreateSimpleDic.c</in>
+            <in>utl_CutString.c</in>
+            <in>utl_DelAllDicItems.c</in>
+            <in>utl_DelDicItem.c</in>
+            <in>utl_DelDictionary.c</in>
+            <in>utl_DelString.c</in>
+            <in>utl_DelStringWithMode.c</in>
+            <in>utl_GetCharIndexInString.c</in>
+            <in>utl_GetDicItem.c</in>
+            <in>utl_GetDicItemStatus.c</in>
+            <in>utl_GetDicStatus.c</in>
+            <in>utl_GetErrorLevel.c</in>
+            <in>utl_GetHeaderString.c</in>
+            <in>utl_GetIntegerSize.c</in>
+            <in>utl_GetMemSize.c</in>
+            <in>utl_GetName.c</in>
+            <in>utl_GetNameIndex.c</in>
+            <in>utl_GetNameWithIndex.c</in>
+            <in>utl_GetRHeaderString.c</in>
+            <in>utl_GetSlicedNameList.c</in>
+            <in>utl_GetString.c</in>
+            <in>utl_GetStringMode.c</in>
+            <in>utl_GetStringWithMode.c</in>
+            <in>utl_GetTailerString.c</in>
+            <in>utl_GetVhdlIndexedName.c</in>
+            <in>utl_GetVhdlName.c</in>
+            <in>utl_GetVhdlSlicedName.c</in>
+            <in>utl_HexToInt.c</in>
+            <in>utl_Initialize.c</in>
+            <in>utl_IsFloatInteger.c</in>
+            <in>utl_IsFloatNatural.c</in>
+            <in>utl_IsFormatLegal.c</in>
+            <in>utl_OctToInt.c</in>
+            <in>utl_Open.c</in>
+            <in>utl_PrettyString.c</in>
+            <in>utl_SaveNString.c</in>
+            <in>utl_SaveNStringWithMode.c</in>
+            <in>utl_SaveString.c</in>
+            <in>utl_SaveStringWithMode.c</in>
+            <in>utl_SetDicMode.c</in>
+            <in>utl_SetErrorLevel.c</in>
+            <in>utl_SetIndexDelimiter.c</in>
+            <in>utl_SetStringMode.c</in>
+            <in>utl_SetTraceLevel.c</in>
+            <in>utl_SplitFlatFormat.c</in>
+            <in>utl_SplitFormat.c</in>
+            <in>utl_SplitString.c</in>
+            <in>utl_Trace.c</in>
+            <in>utl_addutchn.c</in>
+            <in>utl_adduttdc.c</in>
+            <in>utl_adduttpd.c</in>
+            <in>utl_adduttyp.c</in>
+            <in>utl_adqutchn.c</in>
+            <in>utl_adquttyp.c</in>
+            <in>utl_alcbyt.c</in>
+            <in>utl_alloc.c</in>
+            <in>utl_catutchn.c</in>
+            <in>utl_catuttdc.c</in>
+            <in>utl_catuttpd.c</in>
+            <in>utl_catuttyp.c</in>
+            <in>utl_ccputchn.c</in>
+            <in>utl_ccputtyp.c</in>
+            <in>utl_cmpsint.c</in>
+            <in>utl_cmpuint.c</in>
+            <in>utl_cpyutchn.c</in>
+            <in>utl_cpyuttdc.c</in>
+            <in>utl_cpyuttyp.c</in>
+            <in>utl_eqlutchn.c</in>
+            <in>utl_eqluttyp.c</in>
+            <in>utl_error.c</in>
+            <in>utl_fprutchn.c</in>
+            <in>utl_fpruttyp.c</in>
+            <in>utl_frebyt.c</in>
+            <in>utl_free.c</in>
+            <in>utl_freutchn.c</in>
+            <in>utl_freuttdc.c</in>
+            <in>utl_freuttpd.c</in>
+            <in>utl_freuttyp.c</in>
+            <in>utl_frlutchn.c</in>
+            <in>utl_frluttdc.c</in>
+            <in>utl_frluttpd.c</in>
+            <in>utl_frluttyp.c</in>
+            <in>utl_globals.c</in>
+            <in>utl_hash2.c</in>
+            <in>utl_hashkey.c</in>
+            <in>utl_hashstr.c</in>
+            <in>utl_hshutchn.c</in>
+            <in>utl_insutchn.c</in>
+            <in>utl_isbdigit.c</in>
+            <in>utl_isddigit.c</in>
+            <in>utl_isodigit.c</in>
+            <in>utl_isxdigit.c</in>
+            <in>utl_lenutchn.c</in>
+            <in>utl_lenuttpd.c</in>
+            <in>utl_lenuttyp.c</in>
+            <in>utl_mvqutchn.c</in>
+            <in>utl_mvquttyp.c</in>
+            <in>utl_qstutchn.c</in>
+            <in>utl_revutchn.c</in>
+            <in>utl_revuttdc.c</in>
+            <in>utl_revuttpd.c</in>
+            <in>utl_revuttyp.c</in>
+            <in>utl_rmvutchn.c</in>
+            <in>utl_rmvuttyp.c</in>
+            <in>utl_splutchn.c</in>
+            <in>utl_spluttyp.c</in>
+            <in>utl_srtutchn.c</in>
+            <in>utl_srtuttyp.c</in>
+            <in>utl_typ2chn.c</in>
+          </df>
+          <in>asm_mipslex.c</in>
+          <in>asm_mipsyac.cpp</in>
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-g"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+          <cTool>
+            <incDir>
+              <pElem>include</pElem>
+              <pElem>.</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>ASM_H=&lt;asm200.h></Elem>
+              <Elem>UTL_H=&lt;utl200.h></Elem>
+            </preprocessorList>
+          </cTool>
+          <ccTool>
+            <incDir>
+              <pElem>include</pElem>
+              <pElem>.</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>ASM_H=&lt;asm200.h></Elem>
+              <Elem>UTL_H=&lt;utl200.h></Elem>
+            </preprocessorList>
+          </ccTool>
+        </makeTool>
+      </makefileType>
+      <item path="src/base/Basic_block.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/base/Cfg.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/base/Dfg.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/base/Directive.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/base/Function.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/base/Instruction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/base/Label.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/base/Node_dfg.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/base/OPExpression.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/base/OPImmediate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/base/OPLabel.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/base/OPRegister.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/base/Program.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/mains/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/mains/test_bb_cfg.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/mains/test_dep.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/mains/test_karine.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/parsing/asm/asm_GetInputSection.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/asm/asm_GetObject.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/asm/asm_GetObjectSymbolList.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/asm/asm_SetMemory.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/asm/asm_SetWordMemory.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/asm/asm_addasiss.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/asm/asm_addasobj.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/asm/asm_addmemtab.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/asm/asm_error.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/asm/asm_fndmemtab.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/asm/asm_globals.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/asm_mipslex.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/asm_mipsyac.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/parsing/utl/utl_AddDicItem.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_Banner.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_BinToInt.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_CatNameIndex.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_CharToAscii.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_CharToInt.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_ClearError.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_CreateDictionary.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_CreateSimpleDic.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_CutString.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_DelAllDicItems.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_DelDicItem.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_DelDictionary.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_DelString.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_DelStringWithMode.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_GetCharIndexInString.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_GetDicItem.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_GetDicItemStatus.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_GetDicStatus.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_GetErrorLevel.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_GetHeaderString.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_GetIntegerSize.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_GetMemSize.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_GetName.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_GetNameIndex.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_GetNameWithIndex.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_GetRHeaderString.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_GetSlicedNameList.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_GetString.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_GetStringMode.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_GetStringWithMode.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_GetTailerString.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_GetVhdlIndexedName.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_GetVhdlName.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_GetVhdlSlicedName.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_HexToInt.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_Initialize.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_IsFloatInteger.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_IsFloatNatural.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_IsFormatLegal.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_OctToInt.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_Open.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_PrettyString.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_SaveNString.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_SaveNStringWithMode.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_SaveString.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_SaveStringWithMode.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_SetDicMode.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_SetErrorLevel.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_SetIndexDelimiter.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_SetStringMode.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_SetTraceLevel.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_SplitFlatFormat.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_SplitFormat.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_SplitString.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_Trace.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_addutchn.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_adduttdc.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_adduttpd.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_adduttyp.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_adqutchn.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_adquttyp.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_alcbyt.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_alloc.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_catutchn.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_catuttdc.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_catuttpd.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_catuttyp.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_ccputchn.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_ccputtyp.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_cmpsint.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_cmpuint.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_cpyutchn.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_cpyuttdc.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_cpyuttyp.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_eqlutchn.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_eqluttyp.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_error.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_fprutchn.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_fpruttyp.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_frebyt.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_free.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_freutchn.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_freuttdc.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_freuttpd.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_freuttyp.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_frlutchn.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_frluttdc.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_frluttpd.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_frluttyp.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_globals.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_hash2.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_hashkey.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_hashstr.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_hshutchn.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_insutchn.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_isbdigit.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_isddigit.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_isodigit.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_isxdigit.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_lenutchn.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_lenuttpd.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_lenuttyp.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_mvqutchn.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_mvquttyp.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_qstutchn.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_revutchn.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_revuttdc.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_revuttpd.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_revuttyp.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_rmvutchn.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_rmvuttyp.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_splutchn.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_spluttyp.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_srtutchn.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_srtuttyp.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="src/parsing/utl/utl_typ2chn.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

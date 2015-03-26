@@ -1,0 +1,1812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="src" displayName="src" projectFiles="true" root="../src">
+        <logicalFolder name="base" displayName="base" projectFiles="true">
+          <itemPath>../src/base/Basic_block.cpp</itemPath>
+          <itemPath>../src/base/Cfg.cpp</itemPath>
+          <itemPath>../src/base/Dfg.cpp</itemPath>
+          <itemPath>../src/base/Directive.cpp</itemPath>
+          <itemPath>../src/base/Function.cpp</itemPath>
+          <itemPath>../src/base/Instruction.cpp</itemPath>
+          <itemPath>../src/base/Label.cpp</itemPath>
+          <itemPath>../src/base/Node_dfg.cpp</itemPath>
+          <itemPath>../src/base/OPExpression.cpp</itemPath>
+          <itemPath>../src/base/OPImmediate.cpp</itemPath>
+          <itemPath>../src/base/OPLabel.cpp</itemPath>
+          <itemPath>../src/base/OPRegister.cpp</itemPath>
+          <itemPath>../src/base/Program.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="mains" displayName="mains" projectFiles="true">
+          <itemPath>../src/mains/test_karine.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="parsing" displayName="parsing" projectFiles="true">
+          <logicalFolder name="asm" displayName="asm" projectFiles="true">
+            <itemPath>../src/parsing/asm/asm_GetInputSection.c</itemPath>
+            <itemPath>../src/parsing/asm/asm_GetObject.c</itemPath>
+            <itemPath>../src/parsing/asm/asm_GetObjectSymbolList.c</itemPath>
+            <itemPath>../src/parsing/asm/asm_SetMemory.c</itemPath>
+            <itemPath>../src/parsing/asm/asm_SetWordMemory.c</itemPath>
+            <itemPath>../src/parsing/asm/asm_addasiss.c</itemPath>
+            <itemPath>../src/parsing/asm/asm_addasobj.c</itemPath>
+            <itemPath>../src/parsing/asm/asm_addmemtab.c</itemPath>
+            <itemPath>../src/parsing/asm/asm_error.c</itemPath>
+            <itemPath>../src/parsing/asm/asm_fndmemtab.c</itemPath>
+            <itemPath>../src/parsing/asm/asm_globals.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="utl" displayName="utl" projectFiles="true">
+            <itemPath>../src/parsing/utl/utl_AddDicItem.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_Banner.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_BinToInt.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_CatNameIndex.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_CharToAscii.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_CharToInt.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_ClearError.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_CreateDictionary.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_CreateSimpleDic.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_CutString.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_DelAllDicItems.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_DelDicItem.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_DelDictionary.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_DelString.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_DelStringWithMode.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_GetCharIndexInString.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_GetDicItem.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_GetDicItemStatus.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_GetDicStatus.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_GetErrorLevel.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_GetHeaderString.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_GetIntegerSize.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_GetMemSize.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_GetName.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_GetNameIndex.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_GetNameWithIndex.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_GetRHeaderString.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_GetSlicedNameList.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_GetString.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_GetStringMode.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_GetStringWithMode.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_GetTailerString.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_GetVhdlIndexedName.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_GetVhdlName.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_GetVhdlSlicedName.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_HexToInt.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_Initialize.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_IsFloatInteger.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_IsFloatNatural.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_IsFormatLegal.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_OctToInt.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_Open.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_PrettyString.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_SaveNString.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_SaveNStringWithMode.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_SaveString.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_SaveStringWithMode.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_SetDicMode.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_SetErrorLevel.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_SetIndexDelimiter.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_SetStringMode.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_SetTraceLevel.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_SplitFlatFormat.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_SplitFormat.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_SplitString.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_Trace.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_addutchn.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_adduttdc.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_adduttpd.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_adduttyp.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_adqutchn.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_adquttyp.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_alcbyt.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_alloc.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_catutchn.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_catuttdc.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_catuttpd.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_catuttyp.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_ccputchn.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_ccputtyp.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_cmpsint.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_cmpuint.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_cpyutchn.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_cpyuttdc.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_cpyuttyp.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_eqlutchn.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_eqluttyp.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_error.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_fprutchn.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_fpruttyp.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_frebyt.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_free.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_freutchn.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_freuttdc.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_freuttpd.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_freuttyp.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_frlutchn.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_frluttdc.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_frluttpd.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_frluttyp.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_globals.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_hash2.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_hashkey.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_hashstr.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_hshutchn.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_insutchn.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_isbdigit.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_isddigit.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_isodigit.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_isxdigit.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_lenutchn.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_lenuttpd.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_lenuttyp.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_mvqutchn.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_mvquttyp.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_qstutchn.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_revutchn.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_revuttdc.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_revuttpd.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_revuttyp.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_rmvutchn.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_rmvuttyp.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_splutchn.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_spluttyp.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_srtutchn.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_srtuttyp.c</itemPath>
+            <itemPath>../src/parsing/utl/utl_typ2chn.c</itemPath>
+          </logicalFolder>
+          <itemPath>../src/parsing/asm_mips.lex</itemPath>
+          <itemPath>../src/parsing/asm_mipslex.c</itemPath>
+          <itemPath>../src/parsing/asm_mipsyac.cpp</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>../bin/cpp/test_karine</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../src</Elem>
+  </sourceRootList>
+  <projectmakefile></projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-std=c89"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>../bin/cpp</buildCommandWorkingDir>
+          <buildCommand>${MAKE}</buildCommand>
+          <cleanCommand>${MAKE} clean</cleanCommand>
+          <executablePath>../bin/cpp/test_karine</executablePath>
+          <ccTool>
+            <incDir>
+              <pElem>../include</pElem>
+            </incDir>
+          </ccTool>
+        </makeTool>
+      </makefileType>
+      <item path="../src/base/Basic_block.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../include/boost/graph</pElem>
+            <pElem>../include/boost/config</pElem>
+            <pElem>../include/boost/unordered/detail</pElem>
+            <pElem>../include/boost/detail</pElem>
+            <pElem>../include/boost/integer</pElem>
+            <pElem>../include/boost</pElem>
+            <pElem>../include/boost/mpl/aux_</pElem>
+            <pElem>../include/boost/mpl</pElem>
+            <pElem>../include/boost/mpl/aux_/preprocessed/gcc</pElem>
+            <pElem>../include/boost/type_traits/detail</pElem>
+            <pElem>../include/boost/move</pElem>
+            <pElem>../include/boost/tuple/detail</pElem>
+            <pElem>../include/boost/type_traits</pElem>
+            <pElem>../include/boost/exception</pElem>
+            <pElem>../include/boost/functional/hash/detail</pElem>
+            <pElem>../include/boost/iterator/detail</pElem>
+            <pElem>../include/boost/concept/detail</pElem>
+            <pElem>../include/boost/multi_index</pElem>
+            <pElem>../include/boost/multi_index/detail</pElem>
+            <pElem>../include/boost/archive</pElem>
+            <pElem>../include/boost/serialization</pElem>
+            <pElem>../include/boost/optional</pElem>
+            <pElem>../include/boost/range</pElem>
+            <pElem>../include/boost/range/detail</pElem>
+            <pElem>../include/boost/parameter/aux_</pElem>
+            <pElem>../include/boost/parameter</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/base/Cfg.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../include/boost/graph</pElem>
+            <pElem>../include/boost/config</pElem>
+            <pElem>../include/boost/unordered/detail</pElem>
+            <pElem>../include/boost/detail</pElem>
+            <pElem>../include/boost/integer</pElem>
+            <pElem>../include/boost</pElem>
+            <pElem>../include/boost/mpl/aux_</pElem>
+            <pElem>../include/boost/mpl</pElem>
+            <pElem>../include/boost/mpl/aux_/preprocessed/gcc</pElem>
+            <pElem>../include/boost/type_traits/detail</pElem>
+            <pElem>../include/boost/move</pElem>
+            <pElem>../include/boost/tuple/detail</pElem>
+            <pElem>../include/boost/type_traits</pElem>
+            <pElem>../include/boost/exception</pElem>
+            <pElem>../include/boost/functional/hash/detail</pElem>
+            <pElem>../include/boost/iterator/detail</pElem>
+            <pElem>../include/boost/concept/detail</pElem>
+            <pElem>../include/boost/multi_index</pElem>
+            <pElem>../include/boost/multi_index/detail</pElem>
+            <pElem>../include/boost/archive</pElem>
+            <pElem>../include/boost/serialization</pElem>
+            <pElem>../include/boost/optional</pElem>
+            <pElem>../include/boost/range</pElem>
+            <pElem>../include/boost/range/detail</pElem>
+            <pElem>../include/boost/parameter/aux_</pElem>
+            <pElem>../include/boost/parameter</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/base/Dfg.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../include/boost/graph</pElem>
+            <pElem>../include/boost/config</pElem>
+            <pElem>../include/boost/unordered/detail</pElem>
+            <pElem>../include/boost/detail</pElem>
+            <pElem>../include/boost/integer</pElem>
+            <pElem>../include/boost</pElem>
+            <pElem>../include/boost/mpl/aux_</pElem>
+            <pElem>../include/boost/mpl</pElem>
+            <pElem>../include/boost/mpl/aux_/preprocessed/gcc</pElem>
+            <pElem>../include/boost/type_traits/detail</pElem>
+            <pElem>../include/boost/move</pElem>
+            <pElem>../include/boost/tuple/detail</pElem>
+            <pElem>../include/boost/type_traits</pElem>
+            <pElem>../include/boost/exception</pElem>
+            <pElem>../include/boost/functional/hash/detail</pElem>
+            <pElem>../include/boost/iterator/detail</pElem>
+            <pElem>../include/boost/concept/detail</pElem>
+            <pElem>../include/boost/multi_index</pElem>
+            <pElem>../include/boost/multi_index/detail</pElem>
+            <pElem>../include/boost/archive</pElem>
+            <pElem>../include/boost/serialization</pElem>
+            <pElem>../include/boost/optional</pElem>
+            <pElem>../include/boost/range</pElem>
+            <pElem>../include/boost/range/detail</pElem>
+            <pElem>../include/boost/parameter/aux_</pElem>
+            <pElem>../include/boost/parameter</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/base/Directive.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/base/Function.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../include/boost/graph</pElem>
+            <pElem>../include/boost/config</pElem>
+            <pElem>../include/boost/unordered/detail</pElem>
+            <pElem>../include/boost/detail</pElem>
+            <pElem>../include/boost/integer</pElem>
+            <pElem>../include/boost</pElem>
+            <pElem>../include/boost/mpl/aux_</pElem>
+            <pElem>../include/boost/mpl</pElem>
+            <pElem>../include/boost/mpl/aux_/preprocessed/gcc</pElem>
+            <pElem>../include/boost/type_traits/detail</pElem>
+            <pElem>../include/boost/move</pElem>
+            <pElem>../include/boost/tuple/detail</pElem>
+            <pElem>../include/boost/type_traits</pElem>
+            <pElem>../include/boost/exception</pElem>
+            <pElem>../include/boost/functional/hash/detail</pElem>
+            <pElem>../include/boost/iterator/detail</pElem>
+            <pElem>../include/boost/concept/detail</pElem>
+            <pElem>../include/boost/multi_index</pElem>
+            <pElem>../include/boost/multi_index/detail</pElem>
+            <pElem>../include/boost/archive</pElem>
+            <pElem>../include/boost/serialization</pElem>
+            <pElem>../include/boost/optional</pElem>
+            <pElem>../include/boost/range</pElem>
+            <pElem>../include/boost/range/detail</pElem>
+            <pElem>../include/boost/parameter/aux_</pElem>
+            <pElem>../include/boost/parameter</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/base/Instruction.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/base/Label.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/base/Node_dfg.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../include/boost/graph</pElem>
+            <pElem>../include/boost/config</pElem>
+            <pElem>../include/boost/unordered/detail</pElem>
+            <pElem>../include/boost/detail</pElem>
+            <pElem>../include/boost/integer</pElem>
+            <pElem>../include/boost</pElem>
+            <pElem>../include/boost/mpl/aux_</pElem>
+            <pElem>../include/boost/mpl</pElem>
+            <pElem>../include/boost/mpl/aux_/preprocessed/gcc</pElem>
+            <pElem>../include/boost/type_traits/detail</pElem>
+            <pElem>../include/boost/move</pElem>
+            <pElem>../include/boost/tuple/detail</pElem>
+            <pElem>../include/boost/type_traits</pElem>
+            <pElem>../include/boost/exception</pElem>
+            <pElem>../include/boost/functional/hash/detail</pElem>
+            <pElem>../include/boost/iterator/detail</pElem>
+            <pElem>../include/boost/concept/detail</pElem>
+            <pElem>../include/boost/multi_index</pElem>
+            <pElem>../include/boost/multi_index/detail</pElem>
+            <pElem>../include/boost/archive</pElem>
+            <pElem>../include/boost/serialization</pElem>
+            <pElem>../include/boost/optional</pElem>
+            <pElem>../include/boost/range</pElem>
+            <pElem>../include/boost/range/detail</pElem>
+            <pElem>../include/boost/parameter/aux_</pElem>
+            <pElem>../include/boost/parameter</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/base/OPExpression.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/base/OPImmediate.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/base/OPLabel.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/base/OPRegister.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/base/Program.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../include/boost/graph</pElem>
+            <pElem>../include/boost/config</pElem>
+            <pElem>../include/boost/unordered/detail</pElem>
+            <pElem>../include/boost/detail</pElem>
+            <pElem>../include/boost/integer</pElem>
+            <pElem>../include/boost</pElem>
+            <pElem>../include/boost/mpl/aux_</pElem>
+            <pElem>../include/boost/mpl</pElem>
+            <pElem>../include/boost/mpl/aux_/preprocessed/gcc</pElem>
+            <pElem>../include/boost/type_traits/detail</pElem>
+            <pElem>../include/boost/move</pElem>
+            <pElem>../include/boost/tuple/detail</pElem>
+            <pElem>../include/boost/type_traits</pElem>
+            <pElem>../include/boost/exception</pElem>
+            <pElem>../include/boost/functional/hash/detail</pElem>
+            <pElem>../include/boost/iterator/detail</pElem>
+            <pElem>../include/boost/concept/detail</pElem>
+            <pElem>../include/boost/multi_index</pElem>
+            <pElem>../include/boost/multi_index/detail</pElem>
+            <pElem>../include/boost/archive</pElem>
+            <pElem>../include/boost/serialization</pElem>
+            <pElem>../include/boost/optional</pElem>
+            <pElem>../include/boost/range</pElem>
+            <pElem>../include/boost/range/detail</pElem>
+            <pElem>../include/boost/parameter/aux_</pElem>
+            <pElem>../include/boost/parameter</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/mains/test_karine.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../src/parsing/asm/asm_GetInputSection.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/asm</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/asm/asm_GetObject.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/asm</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/asm/asm_GetObjectSymbolList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/asm</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/asm/asm_SetMemory.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/asm</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/asm/asm_SetWordMemory.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/asm</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/asm/asm_addasiss.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/asm</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/asm/asm_addasobj.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/asm</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/asm/asm_addmemtab.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/asm</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/asm/asm_error.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/asm</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/asm/asm_fndmemtab.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/asm</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/asm/asm_globals.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../include</pElem>
+            <pElem>../src/parsing/asm</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/asm_mipslex.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/asm_mipsyac.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../src/parsing/utl/utl_AddDicItem.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_Banner.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_BinToInt.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_CatNameIndex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_CharToAscii.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_CharToInt.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_ClearError.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_CreateDictionary.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_CreateSimpleDic.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_CutString.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_DelAllDicItems.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_DelDicItem.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_DelDictionary.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_DelString.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_DelStringWithMode.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_GetCharIndexInString.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_GetDicItem.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_GetDicItemStatus.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_GetDicStatus.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_GetErrorLevel.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_GetHeaderString.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_GetIntegerSize.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_GetMemSize.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_GetName.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_GetNameIndex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_GetNameWithIndex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_GetRHeaderString.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_GetSlicedNameList.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_GetString.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_GetStringMode.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_GetStringWithMode.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_GetTailerString.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_GetVhdlIndexedName.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_GetVhdlName.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_GetVhdlSlicedName.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_HexToInt.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_Initialize.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_IsFloatInteger.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_IsFloatNatural.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_IsFormatLegal.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_OctToInt.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_Open.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_PrettyString.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_SaveNString.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_SaveNStringWithMode.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_SaveString.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_SaveStringWithMode.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_SetDicMode.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_SetErrorLevel.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_SetIndexDelimiter.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_SetStringMode.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_SetTraceLevel.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_SplitFlatFormat.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_SplitFormat.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_SplitString.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_Trace.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_addutchn.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_adduttdc.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_adduttpd.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_adduttyp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_adqutchn.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_adquttyp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_alcbyt.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_alloc.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_catutchn.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_catuttdc.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_catuttpd.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_catuttyp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_ccputchn.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_ccputtyp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_cmpsint.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_cmpuint.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_cpyutchn.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_cpyuttdc.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_cpyuttyp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_eqlutchn.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_eqluttyp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_error.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_fprutchn.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_fpruttyp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_frebyt.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_free.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_freutchn.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_freuttdc.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_freuttpd.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_freuttyp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_frlutchn.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_frluttdc.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_frluttpd.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_frluttyp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_globals.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../include</pElem>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_hash2.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_hashkey.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_hashstr.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_hshutchn.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_insutchn.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_isbdigit.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_isddigit.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_isodigit.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_isxdigit.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_lenutchn.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_lenuttpd.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_lenuttyp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_mvqutchn.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_mvquttyp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_qstutchn.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_revutchn.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_revuttdc.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_revuttpd.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_revuttyp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_rmvutchn.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_rmvuttyp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_splutchn.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_spluttyp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_srtutchn.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_srtuttyp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="../src/parsing/utl/utl_typ2chn.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../src/parsing/utl</pElem>
+            <pElem>../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <folder path="SourceFiles/src/base">
+        <ccTool>
+          <incDir>
+            <pElem>../src/base</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="SourceFiles/src/mains">
+        <ccTool>
+          <incDir>
+            <pElem>../src/mains</pElem>
+            <pElem>../include/boost/graph</pElem>
+            <pElem>../include/boost/config</pElem>
+            <pElem>../include/boost/unordered/detail</pElem>
+            <pElem>../include/boost/detail</pElem>
+            <pElem>../include/boost/integer</pElem>
+            <pElem>../include/boost</pElem>
+            <pElem>../include/boost/mpl/aux_</pElem>
+            <pElem>../include/boost/mpl</pElem>
+            <pElem>../include/boost/mpl/aux_/preprocessed/gcc</pElem>
+            <pElem>../include/boost/type_traits/detail</pElem>
+            <pElem>../include/boost/move</pElem>
+            <pElem>../include/boost/tuple/detail</pElem>
+            <pElem>../include/boost/type_traits</pElem>
+            <pElem>../include/boost/exception</pElem>
+            <pElem>../include/boost/functional/hash/detail</pElem>
+            <pElem>../include/boost/iterator/detail</pElem>
+            <pElem>../include/boost/concept/detail</pElem>
+            <pElem>../include/boost/multi_index</pElem>
+            <pElem>../include/boost/multi_index/detail</pElem>
+            <pElem>../include/boost/archive</pElem>
+            <pElem>../include/boost/serialization</pElem>
+            <pElem>../include/boost/optional</pElem>
+            <pElem>../include/boost/range</pElem>
+            <pElem>../include/boost/range/detail</pElem>
+            <pElem>../include/boost/parameter/aux_</pElem>
+            <pElem>../include/boost/parameter</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="SourceFiles/src/parsing">
+        <ccTool>
+          <incDir>
+            <pElem>../include/boost/graph</pElem>
+            <pElem>../include/boost/config</pElem>
+            <pElem>../include/boost/unordered/detail</pElem>
+            <pElem>../include/boost/detail</pElem>
+            <pElem>../include/boost/integer</pElem>
+            <pElem>../include/boost</pElem>
+            <pElem>../include/boost/mpl/aux_</pElem>
+            <pElem>../include/boost/mpl</pElem>
+            <pElem>../include/boost/mpl/aux_/preprocessed/gcc</pElem>
+            <pElem>../include/boost/type_traits/detail</pElem>
+            <pElem>../include/boost/move</pElem>
+            <pElem>../include/boost/tuple/detail</pElem>
+            <pElem>../include/boost/type_traits</pElem>
+            <pElem>../include/boost/exception</pElem>
+            <pElem>../include/boost/functional/hash/detail</pElem>
+            <pElem>../include/boost/iterator/detail</pElem>
+            <pElem>../include/boost/concept/detail</pElem>
+            <pElem>../include/boost/multi_index</pElem>
+            <pElem>../include/boost/multi_index/detail</pElem>
+            <pElem>../include/boost/archive</pElem>
+            <pElem>../include/boost/serialization</pElem>
+            <pElem>../include/boost/optional</pElem>
+            <pElem>../include/boost/range</pElem>
+            <pElem>../include/boost/range/detail</pElem>
+            <pElem>../include/boost/parameter/aux_</pElem>
+            <pElem>../include/boost/parameter</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+    </conf>
+  </confs>
+</configurationDescriptor>
