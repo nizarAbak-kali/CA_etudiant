@@ -211,7 +211,7 @@ void Program::in_file(string const filename){
    monflux.close();	
 }
 
-/*delimite les fonctions du programme et crée la liste des fonctions */
+/*delimite les fonctions du programme et crï¿½e la liste des fonctions */
 void Program::comput_function(){
    Function *func;
    Line *element_debut=NULL;
@@ -274,25 +274,30 @@ list<Function*>::iterator Program::function_list_end(){
 }
 
 
-/* Pour chaque fonction du programme, donc de la liste _myfunc, il faut créer un CFG et l'ajouter à la liste _myCFG ;
-   La création d'un CFG se fait avec un appel au constructeur, par exemple : 
+/* Pour chaque fonction du programme, donc de la liste _myfunc, il faut crï¿½er un CFG et l'ajouter 
+ * ï¿½ la liste _myCFG ;
+   La crï¿½ation d'un CFG se fait avec un appel au constructeur, par exemple : 
    Cfg * cfg = new Cfg(bb0, n);
-   crée un CFG dont le BB d'entrée est bb0 et contenant n BBs.
-   Vous pouvez vous inspirer de la fonction ci-dessus pour itérer sur la liste des fonctions _myfunc. 
-   N'oubliez pas de calculer les blocs de base des fonctions et les succ/pred des BB sinon le CFG n'aura qu'un bloc, le premier (meme si on dit qu'il en a n en paramètre)
+   crï¿½e un CFG dont le BB d'entrï¿½e est bb0 et contenant n BBs.
+   Vous pouvez vous inspirer de la fonction ci-dessus pour itï¿½rer sur la liste des fonctions _myfunc. 
+   N'oubliez pas de calculer les blocs de base des fonctions et les succ/pred des BB sinon 
+ * le CFG n'aura qu'un bloc, le premier (meme si on dit qu'il en a n en paramï¿½tre)
 */
 
 void  Program::comput_CFG(){
+   cout << "Debut de la creation du cfg"<<endl ; 
    list<Function*>::iterator it;
-   Function *current;
+   //Function *current;
    it=_myfunc.begin();
-   int size=(int)_myfunc.size();
-   for(int i=0; i<size; i++){
-     current=*it; //ième fonction du programme
-     current->comput_basic_block();
-     current->comput_succ_pred_BB();
-     _myCFG.push_back(new Cfg(current->get_firstBB(), current->size()));
-     it++;
+   //int size=(int)_myfunc.size();
+   //for(int i=0; i<size; i++){
+   for(list<Function*>::iterator it = _myfunc.begin();it != _myfunc.end(); ++it){ 
+    //current = *it; //iï¿½me fonction du programme
+     
+    (*it)->comput_basic_block();
+    (*it)->comput_succ_pred_BB();
+    _myCFG.push_back(new Cfg((*it)->get_firstBB(), (*it)->size()));
+     //it++;
    }
    return;
 }
