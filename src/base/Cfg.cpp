@@ -1,7 +1,11 @@
 #include <Cfg.h>
 
 Cfg::Cfg(Basic_block * BB, int size){
-  //remplir !
+  
+	_head = BB;
+	 _read = (int *) malloc(size * sizeof(int));
+	_length=size;
+	
 }
 
 Cfg::~Cfg(){}
@@ -15,14 +19,14 @@ Basic_block *Cfg::get_head(){
 //Donner Null en parametre de la fonction lors de son appel
 void Cfg::display(Basic_block *BB){
   if (_length == 0) return;
-   //Si on entre dans la fonction pour la première fois le bloc de base  sera la tete du cfg  
+   //Si on entre dans la fonction pour la premiï¿½re fois le bloc de base  sera la tete du cfg  
    if(BB == NULL)	{
       BB = _head;
       for(int i=0; i<_length; i++)
 	 _read[i]=0;		
    }
    
-   //Si le bloc b'as pas encore été lu (pour eviter les boucle infini)
+   //Si le bloc b'as pas encore ï¿½tï¿½ lu (pour eviter les boucle infini)
    if(!_read[BB->get_index()]){
       //On le marque comme lu
       _read[BB->get_index()]=1;
@@ -82,7 +86,7 @@ void Cfg::restitution(Basic_block *BB, string const filename){
 		      restitution(BB->get_successor2(), filename);
 		  }
 
-		  //lecture du fichier pour savoir s'il y a déjà un parenthese de fin
+		  //lecture du fichier pour savoir s'il y a dï¿½jï¿½ un parenthese de fin
 		  ifstream fichier(filename.c_str());
 		  if(fichier){
        

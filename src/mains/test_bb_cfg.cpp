@@ -40,7 +40,7 @@ int main(int argc, char * argv[]) {
     cout << "nombre de fonction: " << prog.nbr_func() << endl;
 
     Cfg *graph;
-    for (int i = 0; i < prog.nbr_func() - 1; i++) {
+    for (int i = 0; i < prog.nbr_func(); i++) {
 
         functmp = prog.get_function(i);
 
@@ -49,17 +49,18 @@ int main(int argc, char * argv[]) {
             break;
         }
         cout << "FONCTION " << i << endl;
-        //functmp -> display();
+        functmp -> display();
+        
         cout << "Determination des block de base " << endl;
         //determine les BB de la fonction
         functmp->comput_basic_block();
 
-        /*
+        
         cout << "Affichage des blocs de base " << endl; 
         for(int j=0; j<functmp->nbr_BB(); j++){
            functmp->get_BB(j)->display();
         }
-         */
+         
 
         // calcul les �tiquettes de la fonction
         functmp->comput_label();

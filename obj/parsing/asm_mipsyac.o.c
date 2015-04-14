@@ -1,5 +1,5 @@
 # 1 "src/parsing/asm_mipsyac.cpp"
-# 1 "/media/linuxHome/nizar/Documents/Cours Master STL- Science et Technologie du Logiciel/M1-S2/CA/CA_etudiant//"
+# 1 "/users/nfs/Etu9/3402669/NetBeansProjects/CA_etudiant//"
 # 1 "<command-line>"
 # 1 "src/parsing/asm_mipsyac.cpp"
 # 10 "asm_mips.yac"
