@@ -180,8 +180,8 @@ void Function::comput_basic_block() {
     prev = NULL;
     int ind = 0;
     Instruction *i = NULL;
-    Line * b, *l;
-    
+    Line *l;
+    //Line *b;
     cout << "comput BB" << endl;
     cout << "head :" << _head->get_content() << endl;
     cout << "tail :" << _end->get_content() << endl;
@@ -191,9 +191,9 @@ void Function::comput_basic_block() {
     
     
     /**** A COMPLETER ****/
-    
-    
-    while (l = current->get_next()) {
+
+    l=debut;
+    while (current != end) {
         if (l->isInst()) {
             i = getInst(l);
             if (i->is_branch()) {
@@ -216,6 +216,7 @@ void Function::comput_basic_block() {
         }
         
         current = current->get_next();
+        l =current->get_next();
     }
     
     
@@ -297,12 +298,10 @@ void Function::comput_succ_pred_BB() {
                    ;
                 }
                 else{
-                        succ = find_label_BB(instr->get_op_label());
+                	succ = find_label_BB(instr->get_op_label());
                         if(succ)    
                             current->set_link_succ_pred(succ);  
                     }
-                    
-                
             }
         }
         
@@ -328,7 +327,72 @@ void Function::compute_dom() {
     
     
     // A COMPLETER 
-    
+    /*
+    it=_myBB.begin();
+
+    for (int i=0; i<size; i++){
+    	current=*it;
+    	if(current->get_nb_pred() == 0){
+    		for(int j=0; j<size; j++)
+    			current->Domin[j] = false;
+    		workinglist.push_front(current);
+    	}
+    	it++;
+    }
+
+  //calcul des dominants
+    bool T[size],D[size];
+    while(!workinglist.empty()){
+    	change = false;
+    	bb = workinglist.front();
+    	workinglist.pop_front();
+    	if(bb->get_nb_pred() == 0)
+    		for(int m=0; m<size; m++)       // T := N
+    			T[m] = false;
+    	else
+    		for(int m=0; m<size; m++)       // T := N
+    			T[m] = true;
+    	for(int k=0; k<bb->get_nb_pred(); k++){  // foreach... T +:= Domin(pred)
+    		pred = bb->get_predecessor(k);
+    		for(int l=0; l<size; l++){
+    			if(!T[l] || !pred->Domin[l]){
+    				T[l] = false;
+    			}
+    		}
+    	}
+    	for(int k=0; k<size; k++)
+    		D[k] = T[k];
+    	D[bb->get_index()] = true;
+    	for(int j=0; j<size; j++){
+    		if(D[j] != bb->Domin[j]){
+    			change = true;
+    			break;
+    		}
+    	}
+
+    	if(change){
+    		for(int k=0; k<size; k++)
+    			bb->Domin[k] = D[k];
+    		if(bb->get_nb_succ() >= 1)
+    			workinglist.push_back(bb->get_successor1());
+    		if(bb->get_nb_succ() == 2)
+    			workinglist.push_back(bb->get_successor2());
+    	}
+    }
+
+    it2 = _myBB.begin();
+    cout<<endl;
+    for (int i=0; i<size; i++){
+    	cout<<"Domin("<<i<<") = {";
+    	current=*it2;
+    	for(int j=0; j<size; j++)
+    		if(current->Domin[j])
+    			cout<<j<<",";
+    	cout<<"}"<<endl;
+    	it2++;
+    }
+
+      */
     // ne pas enlever 
     dom_computed = true;
     return;
