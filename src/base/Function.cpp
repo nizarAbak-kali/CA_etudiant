@@ -327,13 +327,12 @@ void Function::compute_dom() {
     
     
     // A COMPLETER 
-    /*
     it=_myBB.begin();
 
-    for (int i=0; i<size; i++){
+    for (int i=0; i<size(); i++){
     	current=*it;
     	if(current->get_nb_pred() == 0){
-    		for(int j=0; j<size; j++)
+    		for(int j=0; j<size(); j++)
     			current->Domin[j] = false;
     		workinglist.push_front(current);
     	}
@@ -341,29 +340,29 @@ void Function::compute_dom() {
     }
 
   //calcul des dominants
-    bool T[size],D[size];
+    bool T[size()],D[size()];
     while(!workinglist.empty()){
     	change = false;
     	bb = workinglist.front();
     	workinglist.pop_front();
     	if(bb->get_nb_pred() == 0)
-    		for(int m=0; m<size; m++)       // T := N
+    		for(int m=0; m<size(); m++)       // T := N
     			T[m] = false;
     	else
-    		for(int m=0; m<size; m++)       // T := N
+    		for(int m=0; m<size(); m++)       // T := N
     			T[m] = true;
     	for(int k=0; k<bb->get_nb_pred(); k++){  // foreach... T +:= Domin(pred)
     		pred = bb->get_predecessor(k);
-    		for(int l=0; l<size; l++){
+    		for(int l=0; l<size(); l++){
     			if(!T[l] || !pred->Domin[l]){
     				T[l] = false;
     			}
     		}
     	}
-    	for(int k=0; k<size; k++)
+    	for(int k=0; k<size(); k++)
     		D[k] = T[k];
     	D[bb->get_index()] = true;
-    	for(int j=0; j<size; j++){
+    	for(int j=0; j<size(); j++){
     		if(D[j] != bb->Domin[j]){
     			change = true;
     			break;
@@ -371,7 +370,7 @@ void Function::compute_dom() {
     	}
 
     	if(change){
-    		for(int k=0; k<size; k++)
+    		for(int k=0; k<size(); k++)
     			bb->Domin[k] = D[k];
     		if(bb->get_nb_succ() >= 1)
     			workinglist.push_back(bb->get_successor1());
@@ -382,17 +381,16 @@ void Function::compute_dom() {
 
     it2 = _myBB.begin();
     cout<<endl;
-    for (int i=0; i<size; i++){
+    for (int i=0; i<size(); i++){
     	cout<<"Domin("<<i<<") = {";
     	current=*it2;
-    	for(int j=0; j<size; j++)
+    	for(int j=0; j<size(); j++)
     		if(current->Domin[j])
     			cout<<j<<",";
     	cout<<"}"<<endl;
     	it2++;
     }
 
-      */
     // ne pas enlever 
     dom_computed = true;
     return;
