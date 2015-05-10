@@ -249,7 +249,7 @@ Instruction* Basic_block::get_last_instruction(){
 }
 
 
-/* link_instructions  numérote les instructions du bloc */
+/* link_instructions  numï¿½rote les instructions du bloc */
 /* remplit le champ nb d'instructions du bloc (_nb_instr) */
 /* remplit le champ derniere instruction du bloc (_lastInst) */
 void Basic_block::link_instructions(){
@@ -302,7 +302,7 @@ bool Basic_block::is_delayed_slot(Instruction *i){
 
 }
 
-/* set_link_succ_pred : ajoute succ comme successeur de this et ajoute this comme prédécesseur de succ
+/* set_link_succ_pred : ajoute succ comme successeur de this et ajoute this comme prï¿½dï¿½cesseur de succ
  */
 
 void Basic_block::set_link_succ_pred(Basic_block* succ){
@@ -310,10 +310,10 @@ void Basic_block::set_link_succ_pred(Basic_block* succ){
   succ->set_predecessor(this);
 }
 
-/* add_dep_link ajoute la dépendance avec pred à la liste des dependances précédesseurs de succ */
-/* ajoute la dependance avec succ à la liste des dépendances successeurs de pred */
+/* add_dep_link ajoute la dï¿½pendance avec pred ï¿½ la liste des dependances prï¿½cï¿½desseurs de succ */
+/* ajoute la dependance avec succ ï¿½ la liste des dï¿½pendances successeurs de pred */
 
-/* dep est une structure de données contenant une instruction et  un type de dépendance */
+/* dep est une structure de donnï¿½es contenant une instruction et  un type de dï¿½pendance */
 
 void add_dep_link(Instruction *pred, Instruction* succ, t_Dep type){
    dep *d;
@@ -329,24 +329,47 @@ void add_dep_link(Instruction *pred, Instruction* succ, t_Dep type){
 }
 
 
-/* calcul des dépendances entre les instructions dans le bloc  */
+/* calcul des dï¿½pendances entre les instructions dans le bloc  */
 /* une instruction a au plus 1 reg dest et 2 reg sources */
-/* Attention le reg source peut être 2 fois le même */ 
-/* Utiliser les méthodes is_dep_RAW1, is_dep_RAW2, is_dep_WAR, is_dep_WAW, is_dep_MEM pour déterminer les dépendances */
+/* Attention le reg source peut ï¿½tre 2 fois le mï¿½me */ 
+/* Utiliser les mï¿½thodes is_dep_RAW1, is_dep_RAW2, is_dep_WAR, is_dep_WAW, is_dep_MEM pour dï¿½terminer les dï¿½pendances */
 
-/* ne pas oublier les dépendances de controle avec le branchement s'il y en a un */
+/* ne pas oublier les dï¿½pendances de controle avec le branchement s'il y en a un */
 
-/* utiliser la fonction add_dep_link ci-dessus qui ajoute à la liste des dépendances pred et succ une dependance entre 2 instructions */
+/* utiliser la fonction add_dep_link ci-dessus qui ajoute Ã  la liste des dï¿½pendances pred et succ une dependance entre 2 instructions */
 
 void Basic_block::comput_pred_succ_dep(){
-   
   // IMPORTANT : laisser les 2 instructions ci-dessous 
    link_instructions();
    if (dep_done) return;
-
-   
-
-   // NE PAS ENLEVER : cette fonction ne doit être appelée qu'une seule fois
+   //*******************************
+   Line *end = _end;
+   Line *l = _head;
+   Instruction *i = NULL,*i2=NULL;
+   while (l != end) {
+	   if (l->isInst()) {
+		   i = getInst(l);
+		   Line *l2 = l->get_next();
+		   while(l2!=end){
+			   if(l2->isInst()){
+				   i2 = getInst(l2);
+				   if(i->is_dep_RAW(i2))
+					   add_dep_link(i,i2,RAW);
+				   if(i->is_dep_WAR(i2))
+					   add_dep_link(i,i2,WAR);
+				   if(i->is_dep_WAW(i2))
+					   add_dep_link(i,i2,WAW);
+				   if(i->is_dep_MEM(i2))
+					   add_dep_link(i,i2,MEMDEP);
+				   add_dep_link(i,i2,CONTROL);
+			   }
+			   l2 = l2->get_next();
+		   }
+	   }
+	   l = l->get_next();
+   }
+   //*******************************
+   // NE PAS ENLEVER : cette fonction ne doit ï¿½tre appelï¿½e qu'une seule fois
    dep_done = true;
    return;
 }
@@ -365,19 +388,50 @@ void Basic_block::reset_pred_succ_dep(){
 }
 
 
-/* calcul le nb de cycles pour executer le BB, on suppose qu'une instruction peut sortir du pipeline à chaque cycle, il faut trouver les cycles de gel induit par les dépendances */
+/* calcul le nb de cycles pour executer le BB, on suppose qu'une instruction peut sortir du pipeline ï¿½ chaque cycle, il faut trouver les cycles de gel induit par les dï¿½pendances */
 
 int Basic_block::nb_cycles(){
-  
- /*** A COMPLETER ***/
-  return 0;
+	int diff=0, d_total=0, nb_cycles=0,gel=0, max=-1;
+	Line *end = _end;
+	Line *l = _head;
+	Instruction *i = NULL;
+	while (l != end) {
+		if (l->isInst()) {
+			i = getInst(l);
+			d_total+=i->get_latency();
+			if(i->is_branch())
+				//1 delayed slot
+				d_total++;
+			for(int k=0;k<i->get_nb_succ();k++){
+				dep *i2 = i->get_succ_dep(k);
+				if(i2->type==RAW){
+					diff=i2->inst->get_index()-i->get_index();
+					cout<<"delai = "<<delai(i->get_type(),i2->inst->get_type())<<endl;
+					cout<<"diff = "<<diff<<endl;
+					//Choisir le gel max
+					if((delai(i->get_type(),i2->inst->get_type())-1-diff)>gel){
+						gel = delai(i->get_type(),i2->inst->get_type())-1-diff;
+						max=k;
+						cout<<"oui"<<endl;
+					}
+				}
+			}
+			if(max!=-1)
+				d_total += delai(i->get_type(),i->get_succ_dep(max)->inst->get_type());
+		}
+		max=-1;
+		nb_cycles += gel;
+		gel = 0;
+		l = l->get_next();
+	}
+	return nb_cycles+d_total;
 }
 
 /* 
 calcule DEF et USE pour l'analyse de registre vivant 
-à la fin on doit avoir
- USE[i] vaut 1 si $i est utilisé dans le bloc avant d'être potentiellement défini dans le bloc
- DEF[i] vaut 1 si $i est défini dans le bloc 
+ï¿½ la fin on doit avoir
+ USE[i] vaut 1 si $i est utilisï¿½ dans le bloc avant d'ï¿½tre potentiellement dï¿½fini dans le bloc
+ DEF[i] vaut 1 si $i est dï¿½fini dans le bloc 
 ******************/
 
 void Basic_block::compute_use_def(void){
@@ -388,9 +442,9 @@ void Basic_block::compute_use_def(void){
 }
 
 /**** compute_def_liveout 
-à la fin de la fonction on doit avoir
-DefLiveOut[i] vaut l'index de l'instruction du bloc qui définit $i si $i vivant en sortie seulement
-Si $i est défini plusieurs fois c'est l'instruction avec l'index le plus grand
+ï¿½ la fin de la fonction on doit avoir
+DefLiveOut[i] vaut l'index de l'instruction du bloc qui dï¿½finit $i si $i vivant en sortie seulement
+Si $i est dï¿½fini plusieurs fois c'est l'instruction avec l'index le plus grand
 *****/
 void Basic_block::compute_def_liveout(){
   /*** A COMPLETER ****/
@@ -399,7 +453,7 @@ void Basic_block::compute_def_liveout(){
 
 
 
-/**** renomme les registres renommables en utilisant comme registres disponibles ceux dont le numéro est dans la liste paramètre 
+/**** renomme les registres renommables en utilisant comme registres disponibles ceux dont le numï¿½ro est dans la liste paramï¿½tre 
 *****/
 void Basic_block::reg_rename(list<int> *frees){
  
@@ -408,7 +462,7 @@ void Basic_block::reg_rename(list<int> *frees){
 }
 
 
-/**** renomme les registres renommables en utilisant comme registres disponibles ceux disponible pour le bloc d'après l'analyse de vivacité et def-use
+/**** renomme les registres renommables en utilisant comme registres disponibles ceux disponible pour le bloc d'aprï¿½s l'analyse de vivacitï¿½ et def-use
 
 *****/
 void Basic_block::reg_rename(){
@@ -470,7 +524,7 @@ void Basic_block::apply_scheduling(list <Node_dfg*> *new_order){
    return;
 }
 
-/* permet de tester des choses sur un bloc de base, par exemple la construction d'un DFG, à venir ... là ne fait rien qu'afficher le BB */
+/* permet de tester des choses sur un bloc de base, par exemple la construction d'un DFG, ï¿½ venir ... lï¿½ ne fait rien qu'afficher le BB */
 void Basic_block::test(){
    cout << "test du BB " << get_index() << endl;
    display();
