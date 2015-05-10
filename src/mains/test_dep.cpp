@@ -57,14 +57,14 @@ int main(int argc, char * argv[]){
 	      bb->comput_pred_succ_dep();
 
 	      cout<<"---nb_cycles : "<<bb->nb_cycles()<<"-----------"<<endl;
-	      d = new Dfg(bb);
+/*	      d = new Dfg(bb);
 	      cout<<"comput critical path"<<endl;
 	      d->restitute(NULL, "./tmp/graph_dfg.dot", true);
 	      d->comput_critical_path();
 	      cout<<"critical path "<<d->get_critical_path()<<endl;
 	      
 	      // liste de registres pour le renommage
-	      // avec des registres passéees en paramètre 
+	      // avec des registres passÃ©ees en paramÃ¨tre 
 	      /*
 	      frees.clear();
 	      for(int k=32; k<64; k++){
@@ -77,13 +77,13 @@ int main(int argc, char * argv[]){
 
 	      /* renommage utilisant les registres disponibles dans le bloc */
 	      /* ne pas faire les 2 */
-	      /* il faut recalculer les informations de vivacité et de def-use 
+	      /* il faut recalculer les informations de vivacitÃ© et de def-use 
 	         pour pouvoir le faire 2 fois de suite !!
 	      */
-	      bb->reg_rename();
+  /*	      bb->reg_rename();
 	      cout<<"----- apres renommage ------"<<endl;
 	      bb->display();
-	      // il faut annuler le calcul des dépendances et le refaire
+	      // il faut annuler le calcul des dÃ©pendances et le refaire
 	      bb->reset_pred_succ_dep();
 	      bb->comput_pred_succ_dep();
 	      cout<<"---nb_cycles--"<<bb->nb_cycles()<<"-----------"<<endl;
@@ -99,8 +99,7 @@ int main(int argc, char * argv[]){
 	      cout<<"---- BB with new scheduling: -----"<<endl;
 	      bb->display();
 	     
-	      cout<<"----nb_cycles--"<<bb->nb_cycles()<<"-----------"<<endl;
-	     
+	      cout<<"----nb_cycles--"<<bb->nb_cycles()<<"-----------"<<endl;*/
 	   }
 	}
 	    
